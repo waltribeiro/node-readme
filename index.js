@@ -59,7 +59,7 @@ inquirer.prompt([
 
 
     const markdownGenerator = `
- 
+
 # Introduction
 
 <img src="avatar">

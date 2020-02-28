@@ -1,18 +1,16 @@
 
 
-    # TDD
+# Introduction
 
-Hi my name is Walt and I am from Philadelphia. I am a software developer
+Hi my name is walt 3 and I am from philly 3. bio 3
 
-## Information
+## Info
 
-* My GitHub username is waltribeiro
+* My GitHub URL is http://github.com/user 3
 
-* My LinkedIn is waltribeiro
+* My LinkedIn is http://linkedin.com/in/link 3
 
-* **Important**: 
+* **Important**:
 
-## 💡 Hint(s)
-
-* Use the previous example as a reference.
+* More info at my website
 

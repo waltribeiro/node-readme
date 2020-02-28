@@ -1,5 +1,23 @@
+/*
+At least one badge
+Project title
+Description
+Table of Contents
+Installation
+Usage
+License
+Contributing
+Tests
+Questions
+  * User GitHub profile picture
+  * User GitHub email
+*/
+
+const avatar = {Response.avatar_url};
 const inquirer = require("inquirer");
 const fs = require("fs");
+var axios = require('axios');
+
 
 inquirer.prompt([
     {
@@ -34,10 +52,17 @@ inquirer.prompt([
     }
 ]).then(function(answers) {
     // console.log(answers);
+    
+    const queryUrl = `https://api.github.com/users/${username};`
+
+    axios.get('queryURL').then(function(data){
+
 
     const markdownGenerator = `
-
+ 
 # Introduction
+
+<img src="avatar">
 
 Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}
 
@@ -63,5 +88,6 @@ Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.
         }
 
         console.log(`Success! ${filename} was created!`);
-    });
+    })
+});
 });

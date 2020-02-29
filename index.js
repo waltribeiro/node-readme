@@ -39,6 +39,13 @@ inquirer.prompt([
 
     },
     {
+      message: "What is your chanc?",
+      type: "choices",
+      name: "chances",
+      choices: ["Choice A", "choice B", "choice C"],
+
+    },
+    {
         message: "What is your github username?",
         type: "input",
         name: "github"
@@ -55,8 +62,7 @@ inquirer.prompt([
     
     const queryUrl = `https://api.github.com/users/${username};`
 
-    axios.get('queryURL').then(function(data){
-
+    axios.get('queryURL').then(function(data) {
 
     const markdownGenerator = `
 

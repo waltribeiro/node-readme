@@ -13,7 +13,7 @@ Questions
   * User GitHub email
 */
 
-const avatar = {Response.avatar_url};
+// const avatar = {Response.avatar_url};
 const inquirer = require("inquirer");
 const fs = require("fs");
 var axios = require('axios');
@@ -39,7 +39,7 @@ inquirer.prompt([
 
     },
     {
-      message: "What is your chanc?",
+      message: "What is your choice?",
       type: "choices",
       name: "chances",
       choices: ["Choice A", "choice B", "choice C"],
@@ -57,18 +57,19 @@ inquirer.prompt([
         name: "linkedin"
 
     }
-]).then(function(answers) {
-    // console.log(answers);
-    
-    const queryUrl = `https://api.github.com/users/${username};`
+])  .then(async function(answers) {
 
-    axios.get('queryURL').then(function(data) {
 
-    const markdownGenerator = `
+  const queryURL = `https://api.github.com/users/${answers.github}`
+
+  await axios.get(queryURL).then(function(data) {
+  
+
+  const markdownGenerator = `
 
 # Introduction
 
-<img src="avatar">
+<img src="${data.data.avatar_url}">
 
 Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}
 
@@ -84,16 +85,23 @@ Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.
 
 `;
 
-    // console.log(htmlGenerator);
+  // console.log(htmlGenerator);
 
-    const filename = "readme-test.md";
+  const filename = "readme-test.md";
 
-    fs.writeFile(filename, markdownGenerator, function(err) {
-        if(err) {
-            throw err;
-        }
+  fs.writeFile(filename, markdownGenerator, function(err) {
+      if(err) {
+          throw err;
+      }
 
-        console.log(`Success! ${filename} was created!`);
-    })
+      console.log(`Success! ${filename} was created!`);
+  })
 });
+
+
+
+})
+.catch(function(err) {
+  console.log(err);
 });
+

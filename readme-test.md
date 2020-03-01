@@ -2,13 +2,15 @@
 
 # Introduction
 
-Hi my name is walt 3 and I am from philly 3. bio 3
+<img src="https://avatars1.githubusercontent.com/u/5629979?v=4">
+
+Hi my name is l and I am from l. l
 
 ## Info
 
-* My GitHub URL is http://github.com/user 3
+* My GitHub URL is http://github.com/waltribeiro
 
-* My LinkedIn is http://linkedin.com/in/link 3
+* My LinkedIn is http://linkedin.com/in/l
 
 * **Important**:
 

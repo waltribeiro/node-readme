@@ -1,11 +1,12 @@
 
 
-# [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
+## [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
 
 <img src="https://avatars1.githubusercontent.com/u/5629979?v=4" style="width=250px;">
 
 <a name="introduction"></a>
-# Introduction
+## Introduction
+
 Hi my name is Walt and I am from Philadelphia, PA. I am a computer programmer.
 
 <a name="description"></a>

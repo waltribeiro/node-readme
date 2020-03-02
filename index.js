@@ -52,12 +52,13 @@ inquirer.prompt([
 
   const markdownGenerator = `
 
-# [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
+## [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
 
 <img src="${data.data.avatar_url}" style="width=250px;">
 
 <a name="introduction"></a>
-# Introduction
+## Introduction
+
 Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}.
 
 <a name="description"></a>
@@ -82,6 +83,7 @@ This shows my ability to build a command-line app for your service or business. 
 
 <a name="badges"></a>
 ## Badges
+
 <img src="https://img.shields.io/badge/github-${answers.github}-orange">
 
 <a name="license"></a>

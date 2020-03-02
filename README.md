@@ -10,14 +10,6 @@
 
 &nbsp;
 
-<a name="description"></a>
-## Description
-
-This README was completely self-generated using Node.js
-
-Watch this video to see how it was made:
-http://node.waltribeiro.com
-
 <a name="introduction"></a>
 ## Introduction
 

@@ -52,14 +52,15 @@ inquirer.prompt([
 
   const markdownGenerator = `
 
-## [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
+## [Description](#description) &nbsp; • &nbsp; [Introduction](#introduction) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
 
-<img src="${data.data.avatar_url}" style="width=250px;">
+<img src="${data.data.avatar_url}" style="width:250px;">
 
-<a name="introduction"></a>
-## Introduction
+<a name="description"></a>
+> ### Description
+> ### This file was generated using Node.js - [watch this video](http://node.waltrib.com)
 
-Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}.
+&nbsp;
 
 <a name="description"></a>
 ## Description
@@ -68,6 +69,11 @@ This README was completely self-generated using Node.js
 
 Watch this video to see how it was made:
 http://node.waltribeiro.com
+
+<a name="introduction"></a>
+## Introduction
+
+Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}.
 
 <a name="usage"></a>
 ## Usage

@@ -1,13 +1,14 @@
 
 
-## [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
+## [Description](#description) &nbsp; • &nbsp; [Introduction](#introduction) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
 
-<img src="https://avatars1.githubusercontent.com/u/5629979?v=4" style="width=250px;">
+<img src="https://avatars1.githubusercontent.com/u/5629979?v=4" style="width:250px;">
 
-<a name="introduction"></a>
-## Introduction
+<a name="description"></a>
+> ### Description
+> ### This file was generated using Node.js - [watch this video](http://node.waltrib.com)
 
-Hi my name is Walt and I am from Philadelphia, PA. I am a computer programmer.
+&nbsp;
 
 <a name="description"></a>
 ## Description
@@ -16,6 +17,11 @@ This README was completely self-generated using Node.js
 
 Watch this video to see how it was made:
 http://node.waltribeiro.com
+
+<a name="introduction"></a>
+## Introduction
+
+Hi my name is Walt and I am from Philadelphia, PA. I am a computer programmer.
 
 <a name="usage"></a>
 ## Usage
@@ -31,6 +37,7 @@ This shows my ability to build a command-line app for your service or business. 
 
 <a name="badges"></a>
 ## Badges
+
 <img src="https://img.shields.io/badge/github-waltribeiro-orange">
 
 <a name="license"></a>

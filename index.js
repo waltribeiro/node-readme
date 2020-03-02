@@ -1,19 +1,4 @@
-/*
-At least one badge
-Project title
-Description
-Table of Contents
-Installation
-Usage
-License
-Contributing
-Tests
-Questions
-  * User GitHub profile picture
-  * User GitHub email
-*/
 
-// const avatar = {Response.avatar_url};
 const inquirer = require("inquirer");
 const fs = require("fs");
 var axios = require('axios');
@@ -38,13 +23,13 @@ inquirer.prompt([
         name: "bio"
 
     },
-    {
-      message: "What is your choice?",
-      type: "choices",
-      name: "chances",
-      choices: ["Choice A", "choice B", "choice C"],
+    // {
+    //   message: "What is your choice?",
+    //   type: "choices",
+    //   name: "chances",
+    //   choices: ["Choice A", "choice B", "choice C"],
 
-    },
+    // },
     {
         message: "What is your github username?",
         type: "input",
@@ -67,27 +52,49 @@ inquirer.prompt([
 
   const markdownGenerator = `
 
+# [Introduction](#introduction) &nbsp; • &nbsp; [Description](#description) &nbsp; • &nbsp; [Usage](#usage) &nbsp; • &nbsp; [Info](#info) &nbsp; • &nbsp; [Badges](#badges) &nbsp; • &nbsp; [License](#license)
+
+<img src="${data.data.avatar_url}" style="width=250px;">
+
+<a name="introduction"></a>
 # Introduction
+Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}.
 
-<img src="${data.data.avatar_url}">
+<a name="description"></a>
+## Description
 
-Hi my name is ${answers.firstName} and I am from ${answers.location}. ${answers.bio}
+This README was completely self-generated using Node.js
 
+Watch this video to see how it was made:
+http://node.waltribeiro.com
+
+<a name="usage"></a>
+## Usage
+
+This shows my ability to build a command-line app for your service or business. Things like editing employee info or tracking inventory are 2 examples how this may be useful for your company. 
+
+<a name="info"></a>
 ## Info
 
 * My GitHub URL is http://github.com/${answers.github}
 
 * My LinkedIn is http://linkedin.com/in/${answers.linkedin}
 
-* **Important**:
+<a name="badges"></a>
+## Badges
+<img src="https://img.shields.io/badge/github-${answers.github}-orange">
 
-* More info at my website
+<a name="license"></a>
+## License
+
+This repository is licensed MIT
+https://github.com/waltribeiro/node-readme/blob/master/LICENSE.md
 
 `;
 
   // console.log(htmlGenerator);
 
-  const filename = "readme-test.md";
+  const filename = "README.md";
 
   fs.writeFile(filename, markdownGenerator, function(err) {
       if(err) {
